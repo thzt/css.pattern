@@ -1,0 +1,27 @@
+/* pattern */
+.vertical-middle-img-text{
+	display:table;
+}
+.vertical-middle-img-text>div{
+	display:table-cell;
+	vertical-align:middle;
+}
+.vertical-middle-img-text>div>img,
+.vertical-middle-img-text>div>span{
+	vertical-align:middle;
+}
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+.vertical-middle-img-text{
+	height:120px;
+	background: gray;
+	font-size:60px;
+}
+.vertical-middle-img-text>div>img,
+.vertical-middle-img-text>div>span{
+	border:1px solid;
+}
