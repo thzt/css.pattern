@@ -6,8 +6,7 @@
 	display:table-cell;
 	vertical-align:middle;
 }
-.vertical-middle-img-text>div>img,
-.vertical-middle-img-text>div>span{
+.vertical-middle-img-text>div>img{
 	vertical-align:middle;
 }
 
