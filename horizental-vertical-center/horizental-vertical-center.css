@@ -1,13 +1,14 @@
 /* pattern */
-.horizental-center-indeterminate-width{
+.horizental-vertical-center{
 	width:100%;
 	display:table;
 }
-.horizental-center-indeterminate-width>div{
+.horizental-vertical-center>div{
 	display:table-cell;
 	text-align: center;
+	vertical-align: middle;
 }
-.horizental-center-indeterminate-width>div>div{
+.horizental-vertical-center>div>div{
 	display:inline-block;
 	text-align:left;
 }
@@ -17,7 +18,11 @@ body{
 	margin:0;
 	padding:0;
 }
-.horizental-center-indeterminate-width>div>div{
+.horizental-vertical-center{
+	height:300px;
+	background: gray;
+}
+.horizental-vertical-center>div>div{
 	width:200px;
 	height:200px;
 	background: orange;

@@ -1,0 +1,15 @@
+/* pattern */
+.horizental-center>div{
+	width:200px;	
+	margin:0 auto;
+}
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+.horizental-center>div{
+	height:200px;	
+	background: orange;
+}
