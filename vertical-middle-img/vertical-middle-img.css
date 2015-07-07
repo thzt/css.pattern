@@ -1,0 +1,21 @@
+/* pattern */
+.vertical-middle-img{
+	display:table;
+}
+.vertical-middle-img>div{
+	display:table-cell;
+	vertical-align:middle;
+}
+.vertical-middle-img>div>img{
+	vertical-align:middle;
+}
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+.vertical-middle-img{
+	height:100px;
+	background: gray;
+}
