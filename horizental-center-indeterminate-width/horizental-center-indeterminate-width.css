@@ -1,0 +1,25 @@
+/* pattern */
+.horizental-center-indeterminate-width{
+	width:100%;
+	display:table;
+}
+.horizental-center-indeterminate-width>div{
+	display:table-cell;
+	text-align: center;
+}
+.horizental-center-indeterminate-width>div>div{
+	display:inline-block;
+	text-align:left;
+}
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+
+.horizental-center-indeterminate-width>div>div{
+	width:200px;
+	height:200px;
+	background: orange;
+}
