@@ -42,8 +42,7 @@
 		rgba(255,0,0,.3) 60%,
 		rgba(255,0,0,1) 80%);
 	
-	animation:animation-name 3s linear;
-	animation-iteration-count:infinite;
+	animation:animation-name 3s linear 0s infinite;
 }
 
 .expanding-animation>span:last-child{
