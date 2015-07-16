@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Transist';
+	src: url('Transist.eot'); /* IE9 Compat Modes */
+	src: url('Transist.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('Transist.woff') format('woff'), /* Modern Browsers */
+		url('Transist.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('Transist.svg#Transist') format('svg'); /* Legacy iOS */
+}
+
+.user-defined-font{
+	font-family:'Transist';
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0
+}
+.user-defined-font{
+	font-size:50px;
+}
