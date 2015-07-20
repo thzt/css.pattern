@@ -5,6 +5,7 @@
 .vertical-middle-img-text>div{
 	display:table-cell;
 	vertical-align:middle;
+	text-align: center;
 }
 .vertical-middle-img-text>div>img{
 	vertical-align:middle;
@@ -19,6 +20,7 @@ body{
 	height:120px;
 	background: gray;
 	font-size:60px;
+	width:500px;
 }
 .vertical-middle-img-text>div>img,
 .vertical-middle-img-text>div>span{

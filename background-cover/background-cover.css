@@ -1,0 +1,13 @@
+.background-cover{
+	background-image:url('1.png');
+	background-size: cover;
+	
+	width:500px;
+	height:90px;
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0;
+}
