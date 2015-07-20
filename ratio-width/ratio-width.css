@@ -1,0 +1,39 @@
+.ratio-width{
+	border-collapse: collapse;
+}
+.ratio-width>tbody>tr>td{
+	margin:0;
+	padding:0;
+}
+.ratio-width>tbody>tr:nth-child(1)>td:nth-child(1){
+	width:60%;
+}
+.ratio-width>tbody>tr:nth-child(1)>td:nth-child(1)>div{
+	border-top-left-radius: 5px;
+	border-top:1px solid;
+	border-left:1px solid;
+}
+.ratio-width>tbody>tr:nth-child(1)>td:nth-child(2)>div{
+	border-top-right-radius: 5px;
+	border-top:1px solid;
+	border-right:1px solid;
+}
+.ratio-width>tbody>tr:nth-child(2)>td>div{
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius: 5px;
+	border:1px solid;
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0;
+}
+.ratio-width{
+	width:80%;
+	margin:20px auto;
+}
+.ratio-width>tbody>tr>td>div{
+	height: 40px;
+}
+	
