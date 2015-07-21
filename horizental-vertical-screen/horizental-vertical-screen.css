@@ -1,0 +1,26 @@
+.horizental-vertical-screen{
+	width:100px;
+	height:100px;
+	position:absolute;
+}
+
+/*pc screen*/
+/*horizental screen*/
+@media (orientation: landscape) {
+	.horizental-vertical-screen{
+		background:green;
+	}
+}
+
+/*vertical screen*/
+@media (orientation: portrait) { 
+	.horizental-vertical-screen{
+		background:red;
+	}
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0;
+}

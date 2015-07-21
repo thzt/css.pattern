@@ -1,0 +1,30 @@
+.skew-side-rectangle>div{
+	display:inline-block;
+	width:100px;
+	height:100px;
+	background: green;
+	border-radius:5px;
+}
+.skew-side-rectangle>div:nth-child(2){
+	transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	-moz-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+
+	position:absolute;
+	left:50px;
+	top:0;
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0;
+	background: gray;
+}
+.skew-side-rectangle{
+	position:absolute;
+	top:100px;
+	left:100px;
+}
