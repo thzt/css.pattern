@@ -1,0 +1,23 @@
+//ie8 doesn't support "nth-child"
+//we use "*+div" instead of "nth-child(2)"
+//"div:first-child" instead of "nth-child(1)"
+@function child-of-index($type,$index){
+	@if($index == 1){
+		@return $type + ":first-child";
+	}
+	
+	$value : "";
+	@for $i from 1 to $index{
+		$value : "*+" + $value;
+	}
+	
+	@return $value + $type;
+}
+
+// use case
+// @import "child-of-index.scss";
+// table>tbody{
+// 	&>#{child-of-index("tr",2)}>td{
+		
+// 	}
+// }

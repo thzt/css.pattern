@@ -1,0 +1,30 @@
+
+// <div class="container">
+// 	<div>
+// 		<div class="content"></div>
+// 	</div>
+// </div>
+@mixin vertical-align-middle{
+	display:table;
+	width:100%;
+	
+	&>div{
+		display:table-cell;
+		text-align: center;
+		vertical-align: middle;
+		
+		&>div{
+			display:inline-block;
+		}
+	}
+}
+
+// use case
+// @import "vertical-align-middle.scss";
+// .container{
+// 	@include vertical-align-middle;
+	
+// 	&>div>div{
+		
+// 	}
+// }
