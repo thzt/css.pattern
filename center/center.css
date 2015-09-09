@@ -1,0 +1,168 @@
+/* author: http://www.hacke2.cn/div-center/ */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+/* 水平居中 */
+/******************************************************************/
+
+.horizontal-center-region{
+    border:1px solid;
+}
+.horizontal-center-region>div:first-child{
+    font-weight:bold;
+    font-size:20px;
+    color:orange;
+}
+.horizontal-center-region>section{
+    margin:50px 0;
+    border:1px dashed;
+}
+
+/* 行内元素 */
+.inline-element{
+    text-align:center;
+}
+
+/* 定宽块级元素 */
+.fixed-width-block{
+    width:100px;
+    margin:0 auto;
+}
+
+
+/* 多个块级元素 */
+.multiple-inline-block{
+    text-align:center;
+}
+.multiple-inline-block>div{
+    display:inline-block;
+}
+
+/* 多个块级元素 flex方案 */
+.multiple-inline-block-flex{
+    display:flex;
+    justify-content:center;
+}
+.multiple-inline-block-flex>div{
+    display:inline-block;
+}
+
+
+/* 垂直居中 */
+/******************************************************************/
+
+.vertical-middle-region{
+    border:1px solid;
+}
+.vertical-middle-region>div:first-child{
+    font-weight:bold;
+    font-size:20px;
+    color:orange;
+}
+.vertical-middle-region>section{
+    border:1px dashed;
+    margin:50px 0;
+}
+
+/* 行内元素 占单行 */
+.inline-element-single-line{
+    height:40px;
+    line-height:40px;
+}
+
+/* 行内元素 占多行 */
+.inline-element-multiple-line{
+    display:table-cell;
+    vertical-align:middle;
+    height:40px;
+}
+
+/* 已知高度的块级元素 */
+.known-height-block{
+    position:relative;
+    height:40px;
+}
+.known-height-block>div{
+    position:absolute;
+    top:50%;
+    height:30px;
+    margin-top:-15px;
+    background:gray;
+}
+
+/* 未知高度的块级元素 */
+.unknown-height-block{
+    position:relative;
+    height:40px;
+}
+.unknown-height-block>div{
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -moz-transform:translateY(-50%);
+    transform: translateY(-50%);
+    background:gray;
+}
+
+/* 水平垂直居中 */
+/******************************************************************/
+
+.horizontal-vertical-middle-region{
+    border:1px solid;
+}
+.horizontal-vertical-middle-region>div:first-child{
+    font-weight:bold;
+    font-size:20px;
+    color:orange;
+}
+.horizontal-vertical-middle-region>section{
+    border:1px dashed;
+    margin:50px 0;
+}
+
+/* 已知宽度高度元素 */
+.known-width-height-element{
+    position:relative;
+    height:40px;
+}
+.known-width-height-element>div{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -100px;
+    background:gray;
+}
+
+/* 已知宽度高度元素 flex方案 */
+.known-width-height-element-flex{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:40px;
+}
+.known-width-height-element-flex>div{
+    width: 200px;
+    height: 30px;
+    background:gray;
+}
+
+/* 未知宽度高度元素 */
+.unknown-width-height-element{
+    position:relative;
+    height:40px;
+}
+.unknown-width-height-element>div{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    background:gray;
+}
