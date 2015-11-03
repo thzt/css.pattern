@@ -1,0 +1,11 @@
+body{
+	background-image:url('1.jpg');
+	background-position:center center;
+	background-attachment:fixed;
+}
+
+/*demo*/
+body{
+	margin:0;
+	padding:0;
+}
