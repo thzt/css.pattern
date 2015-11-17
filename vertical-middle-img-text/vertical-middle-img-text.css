@@ -11,6 +11,20 @@
 	vertical-align:middle;
 }
 
+/* pattern */
+.vertical-middle-img-text-2>div{
+	display:inline-block;
+	height:120px;
+}
+.vertical-middle-img-text-2>div:first-child>img,
+.vertical-middle-img-text-2>div:last-child{
+	vertical-align:middle;
+}
+.vertical-middle-img-text-2>div:last-child{
+	height:120px;
+	line-height:120px;
+}
+
 /* demo */
 body{
 	margin:0;
@@ -25,4 +39,10 @@ body{
 .vertical-middle-img-text>div>img,
 .vertical-middle-img-text>div>span{
 	border:1px solid;
+}
+
+.vertical-middle-img-text-2{
+	height:120px;
+	margin-top:20px;
+	background:gray;
 }
