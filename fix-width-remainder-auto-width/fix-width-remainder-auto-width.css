@@ -1,0 +1,67 @@
+/* pattern */
+
+.fix-width-remainder-auto-width>div:first-child{
+	width:100px;
+	float:left;
+}
+.fix-width-remainder-auto-width>div:last-child{
+	overflow:hidden;
+}
+
+.fix-width-remainder-auto-width-2{
+	border-collapse:collapse;
+	width:100%;
+}
+.fix-width-remainder-auto-width-2>tbody>tr>td:first-child{
+	width:100px;
+}
+
+.fix-width-remainder-auto-width-3{
+	display:table;
+	width:100%;
+}
+.fix-width-remainder-auto-width-3>div{
+	display:table-cell;
+}
+.fix-width-remainder-auto-width-3>div:first-child{
+	width:100px;
+}
+
+.fix-width-remainder-auto-width-4{
+	display:flex;
+}
+.fix-width-remainder-auto-width-4>div:first-child{
+	flex:none;
+	width:100px;
+}
+.fix-width-remainder-auto-width-4>div:last-child{
+	flex:1;
+}
+
+
+/* demo */
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.fix-width-remainder-auto-width>div{
+	height:30px;
+	border:5px solid red;
+}
+
+.fix-width-remainder-auto-width-2>tbody>tr>td{
+	border:5px solid black;
+	height:30px;
+}
+
+.fix-width-remainder-auto-width-3>div{
+	border:5px solid gray;
+	height:30px;
+}
+
+.fix-width-remainder-auto-width-4>div{
+	height:30px;
+	border:5px solid green;
+}
