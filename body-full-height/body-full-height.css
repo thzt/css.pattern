@@ -1,0 +1,22 @@
+/* pattern */
+
+html.body-full-height{
+	height:100%;
+}
+html.body-full-height>body{
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+/* demo */
+
+body{
+	position:relative;
+}
+.test{
+	position:absolute;
+	bottom:0;
+	right:0;
+	font-size:50px;
+}
