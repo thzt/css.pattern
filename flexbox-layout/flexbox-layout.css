@@ -1,0 +1,57 @@
+/* pattern */
+
+.container{
+
+	/* 设置行内flex布局 */
+	display:inline-flex;
+	/* flex|inline-flex */
+
+	/* 主轴方向 */
+	flex-direction:row;
+	/* row(default)|row-reverse|column|column-reverse */
+
+	/* item换行方式 */
+	flex-wrap:wrap;
+	/* nowrap(default)|wrap|wrap-reverse */
+
+	/* item左右的堆积方式 */
+	justify-content:flex-end;
+	/* flex-start(default)|flex-end|center|space-between|space-around */
+
+	/* item的上下对齐方式 */
+	align-items:flex-end;
+	/* stretch|flex-start|flex-end|center|baseline */
+
+	/* 多根主轴的分布方式 */
+	align-content:space-around;
+	/* stretch|flex-start|flex-end|center|space-between|space-around */
+}
+.container>div:nth-child(1){
+
+	/* item的顺序 */
+	order:5;
+	/* 0(default)|1|2... */
+}
+
+/* demo */
+
+body{
+	margin:0;
+	padding:0;
+}
+.container{
+	border:4px solid #ccc;
+	width:180px;
+	height:180px;
+}
+.container>div{
+	width:40px;
+	height:40px;
+	background:#ccc;
+	border:4px solid orange;
+	justify-content:flex-end;
+	align-content:center;
+}
+.container>div:nth-child(1),.container>div:nth-child(3){
+	height:60px;
+}
