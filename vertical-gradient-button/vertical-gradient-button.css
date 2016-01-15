@@ -2,8 +2,11 @@
 
 .vertical-gradient-button{
 	
-	/* Chrome */
+	/* Chrome old */
 	background: -webkit-gradient(linear,100% 0%,100% 100%,from(#FBFBFB),top(#E9E9E9));
+
+	/* Chrome new */
+	background: -webkit-linear-gradient(top,#FBFBFB,#E9E9E9);
 
 	/* Firefox */
 	background: -moz-linear-gradient(top,#FBFBFB,#E9E9E9);
