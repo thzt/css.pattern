@@ -1,0 +1,29 @@
+/* pattern */
+
+.vertical-gradient-button{
+	
+	/* Chrome */
+	background: -webkit-gradient(linear,100% 0%,100% 100%,from(#FBFBFB),top(#E9E9E9));
+
+	/* Firefox */
+	background: -moz-linear-gradient(top,#FBFBFB,#E9E9E9);
+
+	/* Opera */
+	background: -o-linear-gradient(top,#FBFBFB,#E9E9E9);
+
+	/* IE */
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FBFBFB',endColorStr='#E9E9E9',gradientType='0');
+}
+
+/* demo */
+
+.vertical-gradient-button{
+	display:inline-block;
+	width:300px;
+	height:40px;
+	border:1px solid #ccc;
+	text-align:center;
+	line-height:40px;
+	color:#696969;
+	font-family:"微软雅黑";
+}

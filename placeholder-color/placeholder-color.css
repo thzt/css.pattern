@@ -1,0 +1,30 @@
+/* pattern */
+
+/* Chrome */
+input.placeholder-color::-webkit-input-placeholder{
+	color:red;
+}
+
+/* Firefox 4-18 */
+input.placeholder-color:-moz-placeholder{
+	color:red;
+}
+
+/* Firefox 19+ */
+input.placeholder-color::-moz-placeholder{
+	color:red;
+}
+
+/* IE 10+ */
+input.placeholder-color:-ms-placeholder{
+	color:red;
+}
+
+/* demo */
+
+input.placeholder-color{
+	height:40px;
+	width:400px;
+	text-indent:10px;
+	font-size:20px;
+}
