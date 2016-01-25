@@ -152,6 +152,27 @@ body{
     background:gray;
 }
 
+/* 已知高度宽度元素 绝对定位方案 */
+/* http://www.zhangxinxu.com/wordpress/2013/11/margin-auto-absolute-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D-%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/ */
+/* http://www.barretlee.com/blog/2014/08/07/position-and-margin/ */
+/* IE 8+ */
+.known-width-height-element-position-absolute{
+	position:relative;
+	height:40px;
+}
+.known-width-height-element-position-absolute>div{
+	width:200px;
+	height:30px;
+	background:gray;
+	margin:auto;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	clear:both;
+}
+
 /* 未知宽度高度元素 */
 .unknown-width-height-element{
     position:relative;
