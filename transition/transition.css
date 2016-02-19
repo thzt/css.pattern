@@ -1,0 +1,20 @@
+
+/* pattern */
+.test-transition-css,.test-transition-js{
+	left:0;
+	transition:left 2s;
+}
+
+.test-transition-css:hover{
+	left:100px;
+}
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+
+.test-transition-css,.test-transition-js{
+	position:absolute;
+}
