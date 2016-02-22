@@ -1,12 +1,21 @@
 
 /* pattern */
-.multiline-ellipsis{
+.singleline-ellipsis{
 	white-space:nowrap;
 	overflow:hidden;
 	text-overflow:ellipsis;
 }
 
-/* demo */
 .multiline-ellipsis{
+	overflow:hidden;
+	text-overflow:ellipsis;
+
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+}
+
+/* demo */
+.singleline-ellipsis,.multiline-ellipsis{
 	width:250px;
 }
