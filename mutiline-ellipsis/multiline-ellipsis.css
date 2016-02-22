@@ -1,0 +1,12 @@
+
+/* pattern */
+.multiline-ellipsis{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+/* demo */
+.multiline-ellipsis{
+	width:250px;
+}
