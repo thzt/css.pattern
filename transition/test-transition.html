@@ -4,11 +4,38 @@
         <meta charset="UTF-8"/>
         <title>Document</title>
         <link href="transition.css" rel="stylesheet"/>
-        <script src="transition.js"></script>
     </head>
     <body>
-        <div class="test-transition-css">test-transition-css</div>
+        <div class="test-transition-hover">test-transition-hover</div>
         <br/>
-		<div class="test-transition-js">test-transition-js</div>
+		<div class="test-transition-before-domcontentloaded">test-transition-before-domcontentloaded</div>
+        <br/>
+		<div class="test-transition-domcontentloaded">test-transition-domcontentloaded</div>
+        <br/>
+		<div class="test-transition-onload">test-transition-onload</div>
+        <br/>
+		<div class="test-transition-settimeout">test-transition-settimeout</div>
+		
+        <script>
+		//Chrome46:×, Firefox43:√
+		document.querySelector('.test-transition-before-domcontentloaded').style.left='500px';
+		
+		document.addEventListener('DOMContentLoaded',function(){
+			
+			//Chrome46:×, Firefox43:√
+			document.querySelector('.test-transition-domcontentloaded').style.left='500px';
+		},false);
+
+		window.onload=function(){
+
+			//Chrome46:√, Firefox43:√
+			document.querySelector('.test-transition-onload').style.left='500px';
+		};
+
+		//Chrome46:√, Firefox43:√
+		setTimeout(function(){
+			document.querySelector('.test-transition-settimeout').style.left='500px';
+		},0);
+        </script>
     </body>
 </html>

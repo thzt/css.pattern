@@ -1,12 +1,16 @@
 
 /* pattern */
-.test-transition-css,.test-transition-js{
+.test-transition-hover,
+.test-transition-before-domcontentloaded,
+.test-transition-domcontentloaded,
+.test-transition-onload,
+.test-transition-settimeout{
 	left:0;
-	transition:left 2s;
+	transition:left 5s;
 }
 
-.test-transition-css:hover{
-	left:100px;
+.test-transition-hover:hover{
+	left:500px;
 }
 
 /* demo */
@@ -15,6 +19,10 @@ body{
 	padding:0;
 }
 
-.test-transition-css,.test-transition-js{
+.test-transition-hover,
+.test-transition-before-domcontentloaded,
+.test-transition-domcontentloaded,
+.test-transition-onload,
+.test-transition-settimeout{
 	position:absolute;
 }
