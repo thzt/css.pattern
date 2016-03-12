@@ -1,7 +1,7 @@
 
 /* pattern */
 
-.test-border-box>span{
+.four-column-span>span{
 	box-sizing:border-box;
 	
 	display:inline-block;
@@ -9,27 +9,44 @@
 	float:left;
 	border:5px solid;
 }
-.test-border-box::after{
+.four-column-span::after{
 	content:"";
 	display:block;
 	clear:both;
 }
 
-.test-border-box-2{
+.four-column-li{
 	margin:0;
 	padding:0;
 }
-.test-border-box-2>li{
+.four-column-li>li{
 	list-style:none;
 	box-sizing:border-box;
 	width:25%;
 	float:left;
 	border:5px solid;
 }
-.test-border-box-2::after{
+.four-column-li::after{
 	content:"";
 	display:block;
 	clear:both;
+}
+
+.content-box{
+	width:100px;
+	height:100px;
+	background:gray;
+	padding:10px;
+	border:5px solid;
+}
+
+.border-box{
+	width:100px;
+	height:100px;
+	background:gray;
+	padding:10px;
+	border:5px solid;
+	box-sizing:border-box;
 }
 
 /* test */
@@ -39,6 +56,6 @@ body{
 	padding:0;
 }
 
-.test-border-box-2{
+.four-column-li,.content-box,.border-box{
 	margin-top:20px;
 }
