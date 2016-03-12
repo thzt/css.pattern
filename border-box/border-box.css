@@ -1,0 +1,44 @@
+
+/* pattern */
+
+.test-border-box>span{
+	box-sizing:border-box;
+	
+	display:inline-block;
+	width:25%;
+	float:left;
+	border:5px solid;
+}
+.test-border-box::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.test-border-box-2{
+	margin:0;
+	padding:0;
+}
+.test-border-box-2>li{
+	list-style:none;
+	box-sizing:border-box;
+	width:25%;
+	float:left;
+	border:5px solid;
+}
+.test-border-box-2::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/* test */
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.test-border-box-2{
+	margin-top:20px;
+}
