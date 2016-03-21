@@ -1,0 +1,77 @@
+/* http://kayosite.com/block-formatting-contexts-in-detail.html */
+
+/* pattern */
+
+.float-bfc{
+	border:1px solid;
+}
+.float{
+	float:left;
+	border:1px solid red;
+}
+.left{
+	float:left;
+	border:1px solid green;
+}
+.right{
+	float:right;
+	border:1px solid green;
+}
+.clear{
+	clear:both;
+}
+
+.position-absolute-bfc{
+	position:relative;
+	height:50px;
+	border:1px solid purple;
+}
+.position-absolute{
+	position:absolute;    /* or fixed */
+	border:1px solid;
+}
+
+.display-bfc{
+	display:inline-block;    /* or table-cell, table-caption */
+	border:1px solid;
+}
+
+.overflow-bfc{
+	overflow:hidden;    /* or auto, scroll */
+	border:1px solid;
+}
+
+/**********************************/
+
+.fold-margin-between-its-child{
+	margin:10px 0;    /* don't set border, otherwise the margin won't fold between it and it's child */
+}
+.child{
+	margin:10px 0;
+	border:1px solid;
+}
+.bfc-margin{
+	margin:10px 0;
+	overflow:hidden;
+}
+
+.contain-float{
+	border:1px solid;
+	overflow:hidden;
+}
+
+.float-container{
+	border:1px solid;
+	width:100px;
+}
+.prevent-surround-float{
+	overflow:hidden;
+}
+
+/**********************************/
+
+/* demo */
+hr{
+	border:1px dashed red;
+	margin:10px 0;
+}

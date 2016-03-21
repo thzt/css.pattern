@@ -1,0 +1,47 @@
+/* http://kayosite.com/remove-floating-style-in-detail.html */
+
+/* pattern */
+.no-clear{
+}
+.no-clear>span{
+	float:left;
+}
+.clear{
+	clear:both;
+}
+
+.clear-float-1{
+	overflow:hidden;
+	zoom:1;    /* IE6 Hack, trigger hasLayout */
+}
+.clear-float-1>span{
+	float:left;
+}
+
+.clear-float-2{
+	zoom:1;    /* IE6 Hack, trigger hasLayout */
+}
+.clear-float-2::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.clear-float-2>span{
+	float:left;
+}
+
+
+/* demo */
+body{
+	margin:0;
+	padding:0;
+}
+
+.no-clear,.clear-float-1,.clear-float-2{
+	border:1px solid;
+}
+
+hr{
+	margin:10px 0;
+	border:1px dashed red;
+}
