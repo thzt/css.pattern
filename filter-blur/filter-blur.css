@@ -1,0 +1,26 @@
+/* pattern */
+.filter-blur{
+	width:544px;
+	height:184px;
+	background:url("1.png") no-repeat;
+	position:relative;
+}
+
+.filter-blur-mask{
+	background:inherit;    /* key point */
+	background-position:-180px 0;
+	-webkit-filter:blur(30px);
+	filter:blur(30px);
+	
+	width:184px;
+	height:184px;
+	position:absolute;
+	left:180px;
+}
+
+/* demo */
+
+body{
+	margin:0;
+	padding:0;
+}
