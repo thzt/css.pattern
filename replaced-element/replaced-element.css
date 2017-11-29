@@ -1,0 +1,59 @@
+.replaced-element>div,.non-replaced-element>div{
+    background: gray;
+}
+
+/* 替换元素 */ 
+
+.replaced-element.margin>div>.top{
+    margin-top:20px;
+}
+.replaced-element.margin>div>.bottom{
+    margin-bottom:20px;
+}
+.replaced-element.margin>div>.left{
+    margin-left:20px;
+}
+.replaced-element.margin>div>.right{
+    margin-right:20px;
+}
+
+.replaced-element.padding>div>.top{
+    padding-top:30px;
+}
+.replaced-element.padding>div>.bottom{
+    padding-bottom:30px;
+}
+.replaced-element.padding>div>.left{
+    padding-left:30px;
+}
+.replaced-element.padding>div>.right{
+    padding-right:30px;
+}
+
+/* 非替换元素 */ 
+
+.non-replaced-element.margin>div>.top{
+    margin-top:20px;
+}
+.non-replaced-element.margin>div>.bottom{
+    margin-bottom:20px;
+}
+.non-replaced-element.margin>div>.left{
+    margin-left:20px;
+}
+.non-replaced-element.margin>div>.right{
+    margin-right:20px;
+}
+
+.non-replaced-element.padding>div>.top{
+    padding-top:30px;
+}
+.non-replaced-element.padding>div>.bottom{
+    padding-bottom:30px;
+}
+.non-replaced-element.padding>div>.left{
+    padding-left:30px;
+}
+.non-replaced-element.padding>div>.right{
+    padding-right:30px;
+}
