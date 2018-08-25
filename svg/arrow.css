@@ -1,0 +1,131 @@
+.basement-home-arrow line.bar{
+    fill:none;
+    stroke: black;
+    stroke-width: 2;
+
+    stroke-dasharray: 20;
+    stroke-linecap: round;
+}
+
+.basement-home-arrow line.bar.none {
+    stroke-dashoffset: 0;
+}
+
+@keyframes bar1 {
+    0%{
+        stroke: red;
+        stroke-dashoffset: 20;
+    }
+    100% {
+        stroke: red;
+        stroke-dashoffset: 0;
+    }
+}
+
+.basement-home-arrow line.bar.animation1 {
+    stroke-dashoffset: 20;
+
+    animation: bar1 1s linear 0s 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes bar2 {
+    0%{
+        stroke: black;
+        stroke-dashoffset: 20;
+    }
+    100% {
+        stroke: black;
+        stroke-dashoffset: 0;
+    }
+}
+
+.basement-home-arrow line.bar.animation2 {
+    stroke-dashoffset: 20;
+
+    animation: bar2 1s linear 1s 1;
+    animation-fill-mode:forwards;
+}
+
+/* **************************************** */
+
+.basement-home-arrow line.arrow{
+    fill:none;
+    stroke: black;
+    stroke-width: 2;
+
+    stroke-dasharray: 5;
+    stroke-linecap: round;
+}
+
+.basement-home-arrow line.arrow.none {
+    stroke-dashoffset: 0;
+}
+
+@keyframes arrow1 {
+    0%{
+        stroke: black;
+        stroke-dashoffset: 0;
+    }
+    77%{
+        stroke: black;
+        stroke-dashoffset: 5;
+    }
+    78%{
+        stroke: red;
+        stroke-dashoffset: 5;
+    }
+    100%{
+        stroke: red;
+        stroke-dashoffset: 0;
+    }
+}
+
+.basement-home-arrow line.arrow.animation1 {
+    animation: arrow1 1s linear 0s 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes arrow2 {
+    0%{
+        stroke: red;
+        stroke-dashoffset: 0;
+    }
+    77%{
+        stroke: red;
+        stroke-dashoffset: 5;
+    }
+    78%{
+        stroke: black;
+        stroke-dashoffset: 5;
+    }
+    100%{
+        stroke: black;
+        stroke-dashoffset: 0;
+    }
+}
+
+.basement-home-arrow line.arrow.animation2 {
+    stroke-dashoffset: 5;
+
+    animation: arrow2 1s linear 1s 1;
+    animation-fill-mode:forwards;
+}
+
+/* **************************************** */
+
+.delay-1 line.animation1 {
+    animation-delay: 1s !important;
+}
+
+.delay-1 line.animation2{
+    animation-delay: 2s !important;
+} 
+
+.delay-2 line.animation1 {
+    animation-delay: 2s !important;
+}
+
+.delay-2 line.animation2{
+    animation-delay: 3s !important;
+} 
