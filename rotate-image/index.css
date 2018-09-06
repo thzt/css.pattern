@@ -1,0 +1,65 @@
+@keyframes rotate{
+    from {
+        transform: rotate3d(0);
+    }
+
+    to {
+        transform: rotate3d(0,1,0,360deg);
+    }
+}
+
+.rotate-image{
+    width: 544px;
+    transform-style: preserve-3d;
+    animation:rotate 10s linear 0s infinite;
+}
+
+.rotate-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rotate-image .front {
+    transform: translateZ(5px);
+}
+
+.rotate-image .middle-1 {
+    transform: translateZ(4px);
+}
+
+.rotate-image .middle-2 {
+    transform: translateZ(3px);
+}
+
+.rotate-image .middle-3 {
+    transform: translateZ(2px);
+}
+
+.rotate-image .middle-4 {
+    transform: translateZ(1px);
+}
+
+.rotate-image .middle-5 {
+    transform: translateZ(0px);
+}
+
+.rotate-image .middle-6 {
+    transform: translateZ(-1px);
+}
+
+.rotate-image .middle-7 {
+    transform: translateZ(-2px);
+}
+
+.rotate-image .middle-8 {
+    transform: translateZ(-3px);
+}
+
+.rotate-image .middle-9 {
+    transform: translateZ(-4px);
+}
+
+.rotate-image .back {
+    transform: translateZ(-5px);
+}
